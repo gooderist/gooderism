@@ -1,0 +1,4 @@
+baseURL = "http://gooderism.com/"
+languageCode = "en-us"
+title = "Gooderism"
+theme = "hugo_theme_pickles"
