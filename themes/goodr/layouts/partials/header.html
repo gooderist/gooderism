@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/tachyons.min.css" />
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico" />
+  </head>
+  <body class="black-70 avenir">
+    <header class="tc pv4">
+      <div class="bg-black-70 dib w2 h2 br-100"></div>
+      <h1 class="mt2 mb0 baskerville i fw1 f1">
+        <a href="{{ .Site.BaseURL }}" class="link black-70">{{ .Site.Title }}</a>
+      </h1>
+      <h2 class="mt2 mb0 f6 fw4 ttu tracked">{{ .Site.Params.subtitle }}</h2>
+      <nav class="bt bb tc mw7 center mt4">
+        <a class="f6 f5-l link black-70 bg-animate hover-bg-lightest-blue dib pa3 ph4-l" href="/">Home</a>
+        <a class="f6 f5-l link black-70 bg-animate hover-bg-light-green dib pa3 ph4-l" href="/projects">Projects</a>
+        <a class="f6 f5-l link black-70 bg-animate hover-bg-light-pink dib pa3 ph4-l" href="/about/me">About</a>
+      </nav>
+    </header>

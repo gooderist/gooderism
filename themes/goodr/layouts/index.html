@@ -1,0 +1,12 @@
+{{ partial "header.html" . }}
+{{ range $index, $page := (.Paginate (where .Data.Pages "Type" "posts")).Pages }}
+{{ if ne $index 0 }}
+{{ end }}
+<section class="mw7 center">
+  <article class="tc m3 pv2">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}" class="f7 gray">{{ .Date.Format "Jan 2, 2006" }}</time><br>
+      <a href="{{ .Permalink }}" class="f4 f3-l link black-70">{{ .Title }}</a>
+  </article>
+</section>
+{{ end }}
+{{ partial "footer.html" . }}
