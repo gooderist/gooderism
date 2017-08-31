@@ -1,6 +1,6 @@
 baseURL = "http://gooderism.com/"
 languageCode = "en-us"
 title = "Gooderism"
-theme = "hugo_theme_pickles"
+theme = "goodr"
 [params]
   subtitle = "Getting better all the time"
